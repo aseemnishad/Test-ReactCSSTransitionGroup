@@ -1,0 +1,41 @@
+/* ReactCSSTransitionGroup CSS*/
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 800ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 800ms ease-in;
+}
+
+
+/* Custom CSS*/
+.slider > h2 {
+	color:#069;
+}
+
+.slider {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider > span {
+	display: flex;
+	width: 300px;
+	align-self: center;
+}
+
+.slider img {
+	position: absolute;
+}

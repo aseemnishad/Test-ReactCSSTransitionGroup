@@ -2,6 +2,11 @@ import React from 'react';
 import ReactCSSTransitionGroup from 'react/lib/ReactCSSTransitionGroup';
 import './slider.css';
 
+import fl1 from '../img/fl1.jpg'; // Tell Webpack this JS file uses this image
+import fl2 from '../img/fl2.jpg'; // Tell Webpack this JS file uses this image
+import fl3 from '../img/fl3.jpg'; // Tell Webpack this JS file uses this image
+
+
 export default class Slider extends React.Component {
 constructor(props) {
     super(props);
@@ -9,9 +14,7 @@ constructor(props) {
     this.state = {
        total : 0,
     	current: 0, 
-  		images  : ["../img/fl1.jpg",
-  		          "../img/fl2.jpg",
-  		          "../img/fl3.jpg"]
+  		images  : [fl1,fl2,fl3]
     }
   }
 

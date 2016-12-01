@@ -2,13 +2,15 @@ var path = require('path');
 var webpack = require('webpack');
  
 module.exports = {
-  entry: './main.js',
+  entry: './instagram.js',
   output: { 
   	 filename: './bundle.js',
   },
   devServer: {
+
     inline:true,
-    port: 8000
+    port: 8000,
+    historyApiFallback:true
   },
   module: {
     loaders: [
@@ -26,4 +28,8 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    extensions: ['', '.js', '.jsx'],
+  }
+  
 };
